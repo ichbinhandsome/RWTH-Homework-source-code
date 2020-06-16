@@ -1,0 +1,1 @@
+apollo_skiing visualisation argument: Directed graph is a smiple and good method to visualize the sequential transitions. However the layout of the apollo_skiing directed graph is bad, there are many edges crossing each other.Besides some of the nodes are too close to each other which leads to overlapping and make it difficult to understand the graph 

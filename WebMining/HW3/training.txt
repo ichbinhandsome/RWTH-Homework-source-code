@@ -1,0 +1,11 @@
+For epoch equals to 20, we can find that: 
+1) The training loss for different learning rate all decreases consistently, but test loss behaves differently.
+2) learing rate 0.05 and 0.01 are bad because gradient descent can result in learning a sub-optimal set of weights, thus increase rather than decrease the test loss.
+3) learning rate 0.0001 is not optimal, although the test loss continues to drop. This is because smaller learning rates require more training epochs, as changes made to the weights each update are small. 
+4) learning rate 0.001 seems to be the best among four, because the test loss continues to drop and it is lowest.
+
+For epoch equals to 500, we can find that: 
+1) The performance of different learning rate is quite different.
+2) Learing rate 0.05 is too large as both loss oscilate, especially test loss. It is caused by weights that diverge.
+3) learning rate 0.01 and 0.001 are also bad because they behave in a similar way. Although both training and test loss drop at first, test loss quickly increase after 5 epochs of training. This is because large learning rate results in learning a sub-optimal set of weights, thus increase rather than decrease the test loss 
+4) learning rate 0.0001 seems to be the best among four. Although test loss rises slightly after 200 epochs of training, it reaches the minimum. The rise might because the learning rate is still high for 500 epochs of training and gets stuck in learning sub-optimal weights.
